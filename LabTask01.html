@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<style>
+	.textMargin{
+		margin: 2px;
+		margin-left: 200px;
+	}
+
+	.inputMargin{
+		margin: 2px;
+	}
+</style>
+</head>
+<body>
+
+<form>
+	<label><span style="color: red">*</span> - Denotes required information</label><br><br>
+	<label><span style="font-weight:bold">> 1 Donation</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp> 2 Confirmation &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp> 3 Thank You!</label>
+	<div>
+		<h1 style="color: red">Donor Information</h1>
+	<label class="textMargin"><span style="font-weight:bold">First Name</span><span style="color: red">*</span></label>
+	<input type="text" id="fname" name="fname" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Last Name</span><span style="color: red">*</span></label>
+	<input type="text" id="LastName" name="LastName" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Company</span><span style="color: red">*</span></label>
+	<input type="text" id="Company" name="Company" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Address 1</span><span style="color: red">*</span></label>
+	<input type="text" id="a1" name="a1" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Address 2&nbsp</span></label>
+	<input type="text" id="a2" name="a2" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">City</span><span style="color: red">*</span></label>
+	<input type="text" id="city" name="city" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">State</span><span style="color: red">*</span></label>
+	<select id="states" name="states" class="inputMargin">
+		<option disabled="disabled" selected="selected">Select a State</option>
+	</select><br>
+	<label class="textMargin"><span style="font-weight:bold">ZIP Code</span><span style="color: red">*</span></label>
+	<input type="text" id="zip" name="zip" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Country</span><span style="color: red">*</span></label>
+	<select id="country" name="country" class="inputMargin">
+		<option disabled="disabled" selected="selected">Select a Country</option>
+	</select><br>
+	<label class="textMargin"><span style="font-weight:bold">Phone&nbsp</span></label>
+	<input type="text" id="phone" name="phone" class="inputMargin"><br>
+	<label class="textMargin"><span style="font-weight:bold">Fax&nbsp</span></label>
+	<input type="text" id="fax" name="fax" class="inputMargin"><br>
+	<label for="email" class="textMargin"><span style="font-weight:bold">Email</span><span style="color: red">*</span></label>
+	<input type="email" id="email" name="email" class="inputMargin"><br>
+	<label for="email" class="textMargin"><span style="font-weight:bold">Donation Amount</span> <span style="color: red">*</span></label>
+	<input type="radio" id="none" name="amount" value="none" class="inputMargin">
+	<label for="none" class="space">None</label>
+	<input type="radio" id="$50" name="amount" value="$50" class="space">
+	<label for="$50" class="space">$50</label>
+	<input type="radio" id="$75" name="amount" value="$75" class="space">
+	<label for="$75" class="space">$75</label>
+	<input type="radio" id="$100" name="amount" value="$100" class="space">
+	<label for="$100" class="space">$100</label>
+	<input type="radio" id="$250" name="amount" value="$250" class="space">
+	<label for="$250" class="space">$250</label>
+	<input type="radio" id="other" name="amount" value="other" class="space">
+	<label for="other" class="space">Other</label><br>
+	<div class="textMargin">
+		<label>(Check a button or type in your amount)</label>
+		<label><span style="font-weight:bold">Other Amount $ </span></label>
+		<input type="text" name="otheramount">
+	</div>
+	
+	
+	<div class="textMargin">
+		<label><span style="font-weight:bold">Recurring Donation</span></label>
+		<input type="checkbox" id="recurring" name="recurring">
+		<label for="recurring">I am interested in giving on a regular basis.</label><br>
+		<label>(Check if yes)</label>
+	</div>
+
+	<div style="margin-left: 345px">
+	<label>Monthly Credit Card $</label>
+	<input type="text" name="cash">
+	<label>For</label>
+	<input type="text" name="month">
+	<label>Months</label>
+	</div>
+
+
+		<h1><span style="color: red">Honorarium and Memorial Donatio Information</span></h1>
+
+	<div class="textMargin">
+		
+
+		<label style="font-weight: bold;">I would like to make this donation</label>
+		<input type="radio" id="honor" name="donationto" value="To Honor" class="inputMargin">
+		<label for="honor">To Honor</label><br>
+		<input type="radio" id="memory" name="donationto" value="In Memory of" class="inputMargin" style="margin-left: 238px">
+		<label for="memory">In Memory of</label><br>
+
+		<label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">Name</span></label>
+	    <input type="text" id="Name" name="Name" class="inputMargin"><br>
+	    <label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">Acknowledge Donation to</span></label>
+	    <input type="text" id="acknowledge" name="acknowledge" class="inputMargin"><br>
+	    <label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">Address</span></label>
+	    <input type="text" id="addr" name="addr" class="inputMargin"><br>
+	    <label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">City</span></label>
+	    <input type="text" id="city" name="city" class="inputMargin"><br>
+	    <label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">State</span></label>
+	    <select id="states" name="states" class="inputMargin">
+		      <option disabled="disabled" selected="selected">Select a State</option>
+	    </select><br>
+	    <label class="spaceName" style="margin-left: 195px"><span style="font-weight:bold">ZIP Code</span></label>
+	    <input type="text" id="zip" name="zip" class="inputMargin"><br>
+
+	</div>
+
+
+	<div>
+		<h1><span style="color: red">Additional Information</span></h1>
+
+		<label>Please enter your name, company or organization as you would like it to appear in our publications:</label><br>
+		<label style="font-weight: bold;" class="textMargin">Name</label>
+		<input type="text" id="name" name="name"><br>
+		<input type="checkbox" id="gift" name="appear">
+		<label for="gift">I would like my gift to remain anonymous.</label><br>
+		<input type="checkbox" id="matchingGift" name="appear">
+		<label for="matchingGift">My employer offers a matching gift program. i will mail the matching gift form.</label><br>
+		<input type="checkbox" id="acknowledgGift" name="appear">
+		<label for="acknowledgGift">Please save the cost of aacknowledge this gift by not mailing a thank you letter.</label><br>
+		<label style="font-weight: bold;" class="textMargin">Comments</label>
+		<textarea id="mytextarea" rows="4" cols="40"></textarea><br>
+		<label>(Please type any question or feedbach here)</label><br>
+		<label style="font-weight: bold; margin-left: 14px">How may we contact you?</label>
+		<input type="checkbox" id="email2" name="contact">
+		<label for="email2">E-mail</label><br>
+		<input type="checkbox" id="postal" name="contact" class="textMargin">
+		<label for="postal">Postal Mail</label><br>
+		<input type="checkbox" id="telephone" name="contact" class="textMargin">
+		<label for="telephone">Telephone</label><br>
+		<input type="checkbox" id="fax1" name="contact" class="textMargin">
+		<label for="fax1">Fax</label><br>
+		<label>I would like to receive newsletter and information about special event by:</label><br>
+		<input type="checkbox" id="email1" name="contact" class="textMargin">
+		<label for="email1">E-mail</label><br>
+		<input type="checkbox" id="postal1" name="contact" class="textMargin">
+		<label for="postal1">Postal Mail</label><br>
+		<input type="checkbox" id="volunteering" name="volunteering">
+		<label for="volunteering">I would like information about volunteering with the ____________</label><br>
+		<input type="reset" id="reset" name="reset" value="Reset" style="margin-left: 160px">
+		<input type="submit" id="submit" name="submit" value="Continue"><br>
+		<img src="lock-2.png" style="width: 20px; height: 20px;">
+		<label>Donate online with confidence. you are on a source server.</label><br>
+		<label>If you have any problems or questions, please contact <a href="www.support.com">support.</a></label>
+	</div>
+</form>
+
+</body>
+</html>
