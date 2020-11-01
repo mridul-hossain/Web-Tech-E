@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<style>
+			.names{
+				width: 15px;
+				margin-left: 50%;
+			}
+		</style>
+	</title>
+</head>
+<body>
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["LabTask"]);?>
+		<label><span style="color: red">* Write everythimg in a single PHP script.</span></label>
+		<div>
+			<h1>EXPERIMENT NAME</h1>
+			<label>Designing HTML form using PHP with validation of users inputs</label>
+			<h1>OBJECTIVE</h1>
+			<label>This assignment item is designed to give you some practice on validating user input using PHP.</label>
+			<h1>ASSESSMENT TASK</h1>
+			<label>1. Design the following HTML form and perform the following validations</label><br>
+			<fieldset style="width: 50%">
+				<legend>INFORMATION</legend>
+				<div class="names">
+					<label>Name: </label><br>
+					<label>Email: <label><br>
+					<label>Gender: </label><br>
+					<label>Degree: </label><br>
+					<label>Blood Group: </label><br>
+				</div>
+				<div>
+					<input type="text" name="name">
+					<?php echo $nameErr;?><br>
+					<input type="text" name="email"><br>
+					<input type="radio" id="male" name="gender" value="Male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="Female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="Other">
+					<label for="other">Other</label><br>
+					<input type="checkbox" name="degree" id="ssc" value="SSC">
+					<label for="ssc">SSC</label>
+					<input type="checkbox" name="degree" id="hsc" value="HSC">
+					<label for="hsc">HSC</label>
+					<input type="checkbox" name="degree" id="bsc" value="BSc">
+					<label for="bsc">BSc</label>
+					<input type="checkbox" name="degree" id="msc" value="MSc">
+					<label for="msc">MSc</label><br>
+					<select name="bg">
+						<option>A+</option>
+						<option>A-</option>
+						<option>B+</option>
+						<option>B-</option>
+						<option>O+</option>
+						<option>O-</option>
+						<option>AB+</option>
+						<option>AB-</option>
+					</select><br>
+				</div>
+				<div></div>
+				<input type="submit" name="Submit">
+			</fieldset>
+			
+		</div>
+	</form>
+</body>
+</html>
